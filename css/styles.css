@@ -3262,14 +3262,14 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #f4623a;
-    border-color: #f4623a;
+    background-color: #326efa;
+    border-color: #ffffff;
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #cf5331;
-    border-color: #c34e2e;
+    background-color: #193c8c;
+    border-color: #326efa;
 }
 
 .btn-check:focus + .btn-primary,
@@ -8783,9 +8783,9 @@ fieldset:disabled .btn {
     background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-venstre {
+.bg-vamdrup {
     --bs-bg-opacity: 1;
-    background-color: rgba(0, 40, 131, 255) !important;
+    background-color: rgba(0, 100, 200, 130) !important;
 }
 
 .bg-dark {
@@ -12268,20 +12268,39 @@ body {
     border-radius: 10rem;
 }
 
+.btn-m {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1rem;
+}
+
+
+.stretch-pro {
+    font-family: "Stretch Pro";
+}
+
+.arial {
+    font-family: "Arial";
+}
+
+
 hr.divider {
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
-    background-color: #f4623a;
+    background-color: #326efa;
     opacity: 1;
 }
 
-hr.divider-venstre {
+hr.divider-vamdrup {
     height: 0.2rem;
     max-width: 3.25rem;
     margin: 1.5rem auto;
     background-color: #ffffff;
-    opacity: 0;
+    opacity: 1;
 }
 
 hr.divider-light {

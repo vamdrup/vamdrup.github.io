@@ -5,37 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>9.B - VAMDRUP SKOLE</title>
     <link rel="icon" type="image/x-icon" href="assets/smiley.png" />
-    <!-- Bootstrap Icons-->
+    <!-- Bootstrap Ikoner-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Kerne tema CSS (med Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-      <style>
-.countup {
-  text-align: center;
-  margin-bottom: 20px;
-}
-.countup .timeel {
-  display: inline-block;
-  padding: 10px;
-  background: #151515;
-  margin: 0;
-  color: white;
-  min-width: 2.6rem;
-  margin-left: 13px;
-  border-radius: 10px 0 0 10px;
-}
-.countup span[class*="timeRef"] {
-  border-radius: 0 10px 10px 0;
-  margin-left: 0;
-  background: #e8c152;
-  color: black;
-}
-</style>
+    <!-- Skrifttyper --->
+      <link rel="stylesheet" href="Stretch_Pro.ttf" />
+       <link rel="stylesheet" href="Lemon_Milk.ttf" />
+      
+    <style>
+        .countup {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .countup .timeel {
+            display: inline-block;
+            padding: 10px;
+            background: #151515;
+            margin: 0;
+            color: white;
+            min-width: 2.6rem;
+            margin-left: 13px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .countup span[class*="timeRef"] {
+            border-radius: 0 10px 10px 0;
+            margin-left: 0;
+            background: #e8c152;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,17 +50,10 @@
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="assets/logo.png" alt="" width="300" height="37,5" class="d-inline-block align-text-top">
-    </a>
-  </div>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-
-                    <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/">Se videoen</a></li>
-                </ul>
-            </div>
+            <img src="assets/logo.png" alt="" width="300" height="37,5" class="d-inline-block align-text-top">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                <a class="btn btn-primary btn-m" href="https://youtube.com/">Se videoen</a>
+            </ul>
         </div>
     </nav>
 
@@ -64,7 +63,7 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <h1 class="text-white font-weight-bold">9.B</h1>
+                    <h1 class="text-white font-weight-bold stretch-pro">9.B</h1>
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">
@@ -74,40 +73,41 @@
             </div>
         </div>
     </header>
-    
-    
+
+
 
     <!-- INFO-->
-    <section class="page-section bg-venstre" id="info">
+    <section class="page-section bg-vamdrup" id="info">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="text-white mt-0">22 / 06 / 2022</h2>
+                    <h2 class="text-white mt-0 stretch-pro">22 / 06 / 2022</h2>
                     <hr class="divider divider-light" />
                     <p class="text-white-75 mb-4">Det var datoen 9.B afholdte deres dimmention. De fleste af dem startede i 2012 på Vamdrup Skole afd. øst, senere kom de på afd. vest, nye elever kom til, nogle elever forlod, klasserne skulle lægges sammen, flere elever kom til og så skulle de transmiteres.</p>
-                   <a class="btn btn-primary btn-xl" href="https://youtube.com/">Se videoen</a>
+                    <a class="btn btn-primary btn-xl" href="https://youtube.com/">Se videoen</a>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    
-    
-        <!-- Timer-->
+
+
+
+    <!-- Timer-->
     <header class="masthead-timer masthead">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-8 align-self-end">
-                <h4 class="text-black mt-2">SIDSTE SKOLEDAG</h4>
+                <h4 class="text-black mt-2 stretch-pro">SIDSTE SKOLEDAG</h4>
                 <h1 class="text-black mt-0" id="demo"></h1>
                 <hr class="divider" />
             </div>
             <div class="col-lg-8 align-self-baseline">
                 <h6 class="text-black-75 mb-5">Hvor lang tid siden var det at 9.B holdte sidste skoledag?</h6>
             </div>
-    </header>    <script>
+    </header>
+    <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jun 20, 2022 08:00:00").getTime();
+        var countDownDate = new Date("Jun 22, 2022 08:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -134,9 +134,8 @@
                 document.getElementById("demo").innerHTML = "KOMMER";
             }
         }, 1000);
-
     </script>
-    
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body></html>
