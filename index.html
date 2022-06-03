@@ -14,6 +14,28 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+      <style>
+.countup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.countup .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+}
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: #e8c152;
+  color: black;
+}
+</style>
 </head>
 
 <body>
@@ -22,8 +44,11 @@
     <!-- Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="#page-top">Christian Lundt</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="assets/logo.png" alt="" width="300" height="37,5" class="d-inline-block align-text-top">
+    </a>
+  </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
 
@@ -49,8 +74,69 @@
             </div>
         </div>
     </header>
+    
+    
 
+    <!-- INFO-->
+    <section class="page-section bg-venstre" id="info">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-white mt-0">22 / 06 / 2022</h2>
+                    <hr class="divider divider-light" />
+                    <p class="text-white-75 mb-4">Det var datoen 9.B afholdte deres dimmention. De fleste af dem startede i 2012 på Vamdrup Skole afd. øst, senere kom de på afd. vest, nye elever kom til, nogle elever forlod, klasserne skulle lægges sammen, flere elever kom til og så skulle de transmiteres.</p>
+                   <a class="btn btn-primary btn-xl" href="https://youtube.com/">Se videoen</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    
+    
+    
+        <!-- Timer-->
+    <header class="masthead-timer masthead">
+        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-8 align-self-end">
+                <h4 class="text-black mt-2">SIDSTE SKOLEDAG</h4>
+                <h1 class="text-black mt-0" id="demo"></h1>
+                <hr class="divider" />
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <h6 class="text-black-75 mb-5">Hvor lang tid siden var det at 9.B holdte sidste skoledag?</h6>
+            </div>
+    </header>    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 20, 2022 08:00:00").getTime();
 
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = now - countDownDate;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "KOMMER";
+            }
+        }, 1000);
+
+    </script>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body></html>
